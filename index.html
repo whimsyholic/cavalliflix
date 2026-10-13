@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CavalliFlix | Roberto Cavalli Runway Archive</title>
+    <meta
+      name="description"
+      content="A video-first Roberto Cavalli runway archive inspired by GallianoFlix."
+    >
+    <link rel="preconnect" href="https://www.youtube.com">
+    <link rel="preconnect" href="https://i.ytimg.com">
+    <link rel="stylesheet" href="./styles.css?v=160-shows">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="CavalliFlix home">
+        <span class="brand-mark">CF</span>
+        <span>
+          <strong>CavalliFlix</strong>
+          <small>runway archive</small>
+        </span>
+      </a>
+
+      <nav class="topnav" aria-label="Primary">
+        <a href="#watch">Watch</a>
+        <a href="#archive">Archive</a>
+        <a href="#notes">Notes</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="stage" id="watch" aria-labelledby="page-title">
+        <div class="runway-lines" aria-hidden="true"></div>
+        <div class="stage-copy">
+          <p class="eyebrow">Roberto Cavalli runway cinema</p>
+          <h1 id="page-title">Binge the house of leopard, lurex, denim, smoke, and molten glamour.</h1>
+          <p>
+            A video-led archive for Roberto Cavalli fashion shows, arranged like a streaming library:
+            pick an era, open the show, keep track of the mood, and follow the collection trail.
+          </p>
+
+          <div class="quick-stats" aria-label="Archive statistics">
+            <span><strong id="stat-total">0</strong> shows</span>
+            <span><strong id="stat-embedded">0</strong> playable cards</span>
+            <span><strong id="stat-years">0</strong> archive seasons</span>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="collection-strip" aria-label="Cavalli moods">
+        <span>Animalia</span>
+        <span>Molten gold</span>
+        <span>Denim heat</span>
+        <span>Marble smoke</span>
+        <span>Y2K siren</span>
+        <span>Midnight Milan</span>
+      </section>
+
+      <section class="controls" aria-label="Archive controls">
+        <label class="search-box">
+          <span>Search</span>
+          <input id="search" type="search" placeholder="Try Pompeii, Paradise, Fall, 2005...">
+        </label>
+
+        <div class="filter-group" aria-label="Filter by era">
+          <button class="filter-pill is-active" type="button" data-era="all">All</button>
+          <button class="filter-pill" type="button" data-era="fausto">Fausto Puglisi</button>
+          <button class="filter-pill" type="button" data-era="modern">Modern Cavalli</button>
+          <button class="filter-pill" type="button" data-era="archive">Y2K Archive</button>
+          <button class="filter-pill" type="button" data-era="menswear">Menswear</button>
+          <button class="filter-pill" type="button" data-era="just">Just Cavalli</button>
+          <button class="filter-pill" type="button" data-era="resort">Resort / Pre-Fall</button>
+        </div>
+      </section>
+
+      <section class="featured-row" aria-label="Featured collections">
+        <button class="spotlight" type="button" data-feature="newest">
+          <span>Start Latest</span>
+          <strong>FW 2026</strong>
+          <small>Nero Carnale</small>
+        </button>
+        <button class="spotlight" type="button" data-feature="puglisi">
+          <span>Fausto Run</span>
+          <strong>2022-2026</strong>
+          <small>New house codes</small>
+        </button>
+        <button class="spotlight" type="button" data-feature="archive">
+          <span>Archive Hunt</span>
+          <strong>2000s</strong>
+          <small>Y2K Cavalli</small>
+        </button>
+      </section>
+
+      <section class="watch-panel" aria-label="Featured runway player">
+        <aside class="player-shell">
+          <div class="player-meta">
+            <span id="player-era">Latest</span>
+            <button class="icon-button" id="copy-link" type="button" aria-label="Copy current video link" title="Copy video link">
+              <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+          <div class="video-frame" id="video-frame">
+            <iframe
+              id="runway-player"
+              title="Roberto Cavalli runway video"
+              src=""
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="player-caption">
+            <h2 id="player-title">Loading archive...</h2>
+            <p id="player-note"></p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="archive-section" id="archive" aria-labelledby="archive-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">The shelf</p>
+            <h2 id="archive-title">Runway Videos</h2>
+          </div>
+          <p id="result-count"></p>
+        </div>
+
+        <div class="show-grid" id="show-grid"></div>
+      </section>
+
+      <section class="notes" id="notes" aria-labelledby="notes-title">
+        <div>
+          <p class="eyebrow">Curator notes</p>
+          <h2 id="notes-title">160-show Cavalli archive</h2>
+        </div>
+        <div class="notes-grid">
+          <article>
+            <h3>Video-first, look-aware</h3>
+            <p>
+              The archive now maps 160 Roberto Cavalli fashion-brand shows across mainline,
+              menswear, Just Cavalli, Resort, and Pre-Fall. Verified public videos use direct
+              embeds, and the remaining mapped cards use embedded YouTube search playlists.
+            </p>
+          </article>
+          <article>
+            <h3>Archive mode</h3>
+            <p>
+              Early Cavalli footage often lives across Vogue, Style.com archives, FashionTV,
+              FF Channel, World Fashion Channel, and scattered uploads. Search-embed cards open
+              an in-page YouTube playlist for that exact mapped show title.
+            </p>
+          </article>
+          <article>
+            <h3>Sources</h3>
+            <p>
+              Reference structure was inspired by GallianoFlix. Current season availability was
+              checked against Roberto Cavalli official fashion-show pages, Roberto Cavalli's
+              verified YouTube uploads, Vogue runway listings, and public full-show uploads.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>CavalliFlix is an unofficial fan-made archive concept.</span>
+      <a href="https://www.robertocavalli.com/" target="_blank" rel="noreferrer">Official Roberto Cavalli</a>
+    </footer>
+
+    <script src="./app.js?v=160-shows"></script>
+  </body>
+</html>
